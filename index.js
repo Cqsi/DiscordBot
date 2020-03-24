@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const token = "NjkyMDEzOTI2NDI2MjE0NDkz.XnozbQ.360si3H-JaYqqtg4Pouqd2ca99A";
+const token = "NjkyMDEzOTI2NDI2MjE0NDkz.Xno5qw.jbssgraAqXBSilz7YIRjsTsGr6U";
 
 client.on("ready", () =>{
     console.log("This bot is online!");
@@ -9,8 +9,8 @@ client.on("ready", () =>{
 });
 
 client.on("message", msg=>{
-    if(msg.content == "HELLO"){
-        msg.reply("Hello friend!");
+    if(msg.content == "!ping"){
+        msg.channel.send("pong!"); // This is how you send a message
     }
 })
 
